@@ -28,6 +28,7 @@ public class Operator01 {
 
 		int x = 10;
 		System.out.println(x);
+		int z = ++x;
 		System.out.println(++x);
 		System.out.println(x);
 
@@ -42,7 +43,7 @@ public class Operator01 {
 		System.out.println(--y);
 		System.out.println(y);
 
-		int z = 30;
+		z = 30;
 		System.out.println(z + 1);
 		System.out.println(z++);
 		System.out.println(z);
@@ -159,6 +160,11 @@ public class Operator01 {
 		System.out.println((num == 0) ? "0" : ((num > 0) ? "양수" : "음수"));
 		System.out.println((num != 0) ? ((num < 0) ? "음수" : "양수") : "0");
 		System.out.println((num > 0) ? "양수" : ((num < 0) ? "음수" : "0"));
+
+		int menuPrice = 11000; // 점심 식사 메뉴 가격 (임의로 변경해가면서 테스트)
+		String result = ((menuPrice <= 6000) ? "훌륭"
+				: (menuPrice <= 8000) ? "선방" : (menuPrice <= 12000) ? "눈물" : "물로배채우기");
+		System.out.println(result);
 	}
 
 }
